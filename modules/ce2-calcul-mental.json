@@ -1,0 +1,98 @@
+{
+ "id": "ce2-calcul-mental",
+ "version": "1.0.0",
+ "program": "fr-2025",
+ "title": "Calcul mental",
+ "subtitle": "Additions et soustractions jusqu'à 100",
+ "levels": [
+  "ce2"
+ ],
+ "domain": "mathematiques",
+ "competences": [
+  "c2.math.addition",
+  "c2.math.soustraction"
+ ],
+ "periods": [
+  1,
+  2
+ ],
+ "icon": "trophy",
+ "reward": "medal",
+ "order": 110,
+ "recording": "none",
+ "keywords": [
+  "calcul mental",
+  "addition",
+  "soustraction"
+ ],
+ "authors": [
+  "Équipe ACADENA"
+ ],
+ "steps": [
+  {
+   "id": "additions",
+   "kind": "practice",
+   "activity": {
+    "id": "additions",
+    "type": "choice",
+    "title": "Additions",
+    "instruction": "Calcule dans ta tête.",
+    "competences": [
+     "c2.math.addition"
+    ],
+    "rounds": 8,
+    "params": {
+     "generator": {
+      "kind": "addition",
+      "min": 20,
+      "max": 100,
+      "choices": 4
+     }
+    }
+   }
+  },
+  {
+   "id": "soustractions",
+   "kind": "practice",
+   "activity": {
+    "id": "soustractions",
+    "type": "choice",
+    "title": "Soustractions",
+    "instruction": "Calcule dans ta tête.",
+    "competences": [
+     "c2.math.soustraction"
+    ],
+    "rounds": 8,
+    "params": {
+     "generator": {
+      "kind": "subtraction",
+      "min": 20,
+      "max": 100,
+      "choices": 4
+     }
+    }
+   }
+  },
+  {
+   "id": "defi",
+   "kind": "challenge",
+   "activity": {
+    "id": "defi",
+    "type": "sequence",
+    "title": "La file des nombres",
+    "instruction": "Retrouve les nombres cachés.",
+    "competences": [],
+    "rounds": 3,
+    "params": {
+     "generator": {
+      "kind": "missing",
+      "min": 100,
+      "max": 999,
+      "length": 8,
+      "blanks": 3
+     }
+    }
+   }
+  }
+ ]
+}
